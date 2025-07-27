@@ -3,4 +3,4 @@ paddleocr==2.8.1
 paddlepaddle==2.6.2 
 pillow==10.4.0 
 numpy==1.26.4 
-fdk==0.2.2
+fdk
