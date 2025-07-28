@@ -8,11 +8,9 @@ from PIL import Image
 from paddleocr import PaddleOCR
 from fdk import response
 
-# 配置日志
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# 初始化PaddleOCR，设置为日文，禁用GPU
 try:
     ocr = PaddleOCR(use_angle_cls=True, lang="japan", use_gpu=False, det_db_box_thresh=0.5)
 except Exception as e:
